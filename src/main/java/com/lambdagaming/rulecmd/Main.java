@@ -31,5 +31,6 @@ public class Main {
 	{
 		logger.info( "[RulesCommand] Successfully loaded." );
         event.registerServerCommand( new RulesCommand() );
+        event.registerServerCommand( new GroupCommand() );
 	}
 }
