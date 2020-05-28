@@ -1,4 +1,4 @@
-package com.lambdagaming.rulecmd.proxy;
+package com.lambdagaming.comcmd.proxy;
 
 import net.minecraft.item.Item;
 

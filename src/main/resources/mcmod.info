@@ -1,9 +1,9 @@
 [
 {
-  "modid": "rulecmd",
-  "name": "Rules Command",
-  "description": "Command to display a link to the server rules in chat.",
-  "version": "1.1",
+  "modid": "comcmd",
+  "name": "Community Commands",
+  "description": "Includes various commands that displays links for community hubs such as Steam and Discord.",
+  "version": "1.2",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",

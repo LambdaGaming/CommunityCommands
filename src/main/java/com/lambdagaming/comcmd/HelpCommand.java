@@ -1,4 +1,4 @@
-package com.lambdagaming.rulecmd;
+package com.lambdagaming.comcmd;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -10,26 +10,21 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.event.ClickEvent;
 import net.minecraft.util.text.event.ClickEvent.Action;
 
-public class RulesCommand extends CommandBase {
+public class HelpCommand extends CommandBase {
 	@Override
 	public void execute( MinecraftServer server, ICommandSender sender, String[] params ) throws CommandException {
-		String link = "https://lambdagaming.github.io/minecraft/lambda_minecraft_main.html";
-		TextComponentString text = new TextComponentString( link );
-		Style style = text.getStyle();
-		style.setColor( TextFormatting.BLUE );
-		style.setUnderlined( true );
-		style.setClickEvent( new ClickEvent( Action.OPEN_URL, link ) );
+		TextComponentString text = new TextComponentString( "List of available commands for Lambda Gaming: /rules, /group, /discord" );
 		sender.sendMessage( text );
 	}
 	
 	@Override
 	public String getName() {
-		return "rules";
+		return "lambdahelp";
 	}
 
 	@Override
 	public String getUsage( ICommandSender sender ) {
-		return "/rules";
+		return "/lambdahelp";
 	}
 	
 	@Override

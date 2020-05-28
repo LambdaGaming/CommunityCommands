@@ -1,8 +1,8 @@
-package com.lambdagaming.rulecmd;
+package com.lambdagaming.comcmd;
 
 import org.apache.logging.log4j.Logger;
-import com.lambdagaming.rulecmd.proxy.CommonProxy;
-import com.lambdagaming.rulecmd.util.Reference;
+import com.lambdagaming.comcmd.proxy.CommonProxy;
+import com.lambdagaming.comcmd.util.Reference;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -29,8 +29,10 @@ public class Main {
 	@EventHandler
 	public static void init( FMLServerStartingEvent event )
 	{
-		logger.info( "[RulesCommand] Successfully loaded." );
+		logger.info( "[CommunityCommands] Successfully loaded." );
         event.registerServerCommand( new RulesCommand() );
         event.registerServerCommand( new GroupCommand() );
+        event.registerServerCommand( new DiscordCommand() );
+        event.registerServerCommand( new HelpCommand() );
 	}
 }
