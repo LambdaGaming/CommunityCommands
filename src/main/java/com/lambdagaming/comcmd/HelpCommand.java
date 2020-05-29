@@ -13,7 +13,9 @@ import net.minecraft.util.text.event.ClickEvent.Action;
 public class HelpCommand extends CommandBase {
 	@Override
 	public void execute( MinecraftServer server, ICommandSender sender, String[] params ) throws CommandException {
-		TextComponentString text = new TextComponentString( "List of available commands for Lambda Gaming: /rules, /group, /discord" );
+		TextComponentString text = new TextComponentString( "List of available community commands: /rules, /group, /discord" );
+		Style style = text.getStyle();
+		style.setColor( TextFormatting.GOLD );
 		sender.sendMessage( text );
 	}
 	
