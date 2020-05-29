@@ -1,2 +1,2 @@
-# RulesCommand
- Used on all of the modded Lambda Gaming Minecraft servers to display a link to the rules in chat when a player types /rules.
+# CommunityCommands
+ Used on all of the modded Lambda Gaming Minecraft servers to link players to various community pages.
