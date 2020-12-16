@@ -13,7 +13,7 @@ import net.minecraft.util.text.event.ClickEvent.Action;
 public class RulesCommand extends CommandBase {
 	@Override
 	public void execute( MinecraftServer server, ICommandSender sender, String[] params ) throws CommandException {
-		String link = "https://lambdagaming.github.io/minecraft/lambda_minecraft_main.html";
+		String link = "https://lambdagaming.github.io/minecraft/main.html";
 		TextComponentString text = new TextComponentString( link );
 		Style style = text.getStyle();
 		style.setColor( TextFormatting.BLUE );
